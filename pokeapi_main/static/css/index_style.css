@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: black
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: url(../images/Header.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-control {
+    color: white;
+    position: relative;
+    background-color: transparent;
+    width: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+}
+
+.form-control:hover {
+    border: 2px solid #00e0d0;
+    color: #00e0d0;
+}
+
+.error_block {
+    position: relative;
+    margin: 0 auto;
+    width: 12%;
+}
+
+
+.form-error {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    color: #CC0000;
+}
+
+.button {
+    margin: 110px, 5px;
+}
+
+.cities_container {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    content: "";
+    min-height: 50px;
+    width: 100px;
+    top: 2%;
+    left: 2%;
+}
+
+.button_container {
+    position: absolute;
+    content: "";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 50px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+}
+
+.button__item {
+    color: white;
+    margin: 0, 5px;
+    display: inline-block;
+    padding: 10px 10px;
+    vertical-align: top;
+    border: 2px solid black;
+    padding: 10px 10px;
+    transition: 0.2s linear;
+}
+
+.button__item:hover {
+    border: 2px solid #00e0d0;
+    color: #00e0d0;
+}
+
+.hi_user {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-around;
+    font-size: 32px;
+    top: 10px;
+    left: 50%;
+    right: 50%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 32px;
+    color: white;
+}
+
+.container:after {
+    content: "";
+    height: 1px;
+    width: 50px;
+    background-color: #00e0d0;
+    display: block;
+    margin: 30px auto 0;
+}
+
+
+.main_message {
+    width: 50%;
+    margin: 30px auto;
+    font-size: 14px;
+    color: white;
+}
+
+.circle_handler {
+    position: absolute;
+    content: "";
+    border: 1px black;
+    width: 55px;
+    height: 10px;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.circle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle_item {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    background-color: none;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: background 0.2s linear;
+}
+
+.circle_item:hover {
+    background-color: #00e0d0;
+}

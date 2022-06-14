@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/register_style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@700;900&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Weather</title>
+</head>
+
+
+<body>
+    <div class="background">
+        <div class="login_table">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <p><label class="form-label">{{ pokemon }} </label></p>
+                <p>Abilities:</p>
+                <p><label class="form-label">{{ pokemon_desc }} </label></p>
+                <div class="have_account">Go back to the main page <a class="main_url" href="/">here</a>.
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: white
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: url(../images/Header.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login_table {
+    position: relative;
+    border: 3px solid black;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 300px;
+    min-height: 150px;
+}
+
+.button_success {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    background-color: transparent;
+    transition: 0.2s linear;
+}
+
+.button_success:hover {
+    border: 2px solid #00e0d0;
+    color: #00e0d0;
+}
+
+.form-label {
+    display: inline-block;
+    min-width: 150px;
+    vertical-align: top;
+}
+
+.form-error {
+    list-style: none;
+    padding: 0;
+    color: #CC0000;
+}
+
+.have_account {
+    margin-bottom: 20px;
+}
